@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* logo à esquerda, menu e carrinho à direita */
+  align-items: center;
+  background-color: #d60000;
+  padding: 15px 40px;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin-left: 600px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Montserrat'; sans-serif;
+  font-weight: 500;
+}
+
+.cart i {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+
+
+

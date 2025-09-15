@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+.container_red {
+    background-color: #d60000;
+    height: 100%;
+    display: flex;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 350px;
+    height: auto;
+}
+
+.opcao_login {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.footer {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+}

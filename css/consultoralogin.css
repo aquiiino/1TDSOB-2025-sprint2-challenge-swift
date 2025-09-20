@@ -21,7 +21,7 @@ body {
     height: auto;
 }
 
-.opcao_login {
+.login {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -32,6 +32,7 @@ body {
     width: 50%;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif
+
 }
 
 .footer {
@@ -46,7 +47,7 @@ body {
 }
 
 .botao {
-    display: flex;
+    display: block;
     padding: 12px 24px;
     background-color: #ffffff;
     color: rgb(179, 0, 0);
@@ -55,15 +56,63 @@ body {
     border-radius: 12px;
     cursor: pointer;
     text-align: center;
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
     transition: background 0.3s;
-    width: 300px;
-    height: 30px;
+    width: 120px;
+    border: none;
+
 }
 
 .botao:hover {
     background-color: #F0B323;
     color: rgb(255, 255, 255);
+}
+
+.form-field {
+    display: block;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: rgb(179, 0, 0);
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s;
+    width: 300px;
+    height: 30px;
+    border: none;
+}
+
+.form_login {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.botao-unico {
+    display: block;
+    padding: 12px 24px;
+    color: #F0B323;
+    font-family: Arial, sans-serif;
+}
+
+.fundo_login {
+    margin-top: -15px;
+    margin-bottom: -15px;
+    background-color: #bb0000;
+    width: 80%;
+    height: 50%;
+    border-radius: 22px;
 }

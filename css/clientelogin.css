@@ -1,9 +1,23 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; /*linha azul em volta do input*/
+    border: none;
+    text-decoration: none;
+}
+
+:root {
+    --vermelho: #d60000;
+    --branco: rgb(255, 255, 255);
+    --preto: rgb(0, 0, 0);
+    --fonte: rgb(160, 10, 10);
+    --botao: #F0B323;
+    --fundo: #bb0000;
 }
 
 .container_red {
-    background-color: #d60000;
+    background-color: var(--vermelho);
     height: 100%;
     display: flex;
     min-height: 100vh;
@@ -28,7 +42,7 @@ body {
     align-items: center;
     margin-top: 50px;
     text-align: center;
-    color: rgb(160, 10, 10);
+    color: var(--fonte);
     width: 50%;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif
@@ -36,8 +50,8 @@ body {
 }
 
 .footer {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color:var(--branco);
+    color: var(--preto);
     padding: 20px;
     text-align: center;
 }
@@ -49,8 +63,8 @@ body {
 .botao {
     display: block;
     padding: 12px 24px;
-    background-color: #ffffff;
-    color: rgb(179, 0, 0);
+    background-color: var(--branco);
+    color: var(--vermelho);
     font-size: 16px;
     font-family: Arial, sans-serif;
     border-radius: 12px;
@@ -64,15 +78,15 @@ body {
 }
 
 .botao:hover {
-    background-color: #F0B323;
-    color: rgb(255, 255, 255);
+    background-color: var(--botao);
+    color: var(--branco);
 }
 
 .form-field {
     display: block;
     padding: 12px 24px;
-    background-color: #ffffff;
-    color: rgb(179, 0, 0);
+    background-color: var(--branco);
+    color: var(--vermelho);
     font-size: 16px;
     font-family: Arial, sans-serif;
     border-radius: 12px;
@@ -111,7 +125,7 @@ body {
 .fundo_login {
     margin-top: -15px;
     margin-bottom: -15px;
-    background-color: #bb0000;
+    background-color: var(--fundo);
     width: 80%;
     height: 50%;
     border-radius: 22px;

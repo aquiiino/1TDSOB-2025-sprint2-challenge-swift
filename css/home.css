@@ -1,5 +1,12 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; /*linha azul em volta do input*/
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize; /*todos os textos com a primeira letra maiuscula*/
+    transition: 0.2s linear;
 }
 
 .container_red {

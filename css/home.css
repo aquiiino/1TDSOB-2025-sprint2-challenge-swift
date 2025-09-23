@@ -9,8 +9,16 @@
     transition: 0.2s linear;
 }
 
+:root {
+    --vermelho: #d60000;
+    --branco: rgb(255, 255, 255);
+    --preto: rgb(0, 0, 0);
+    --fonte: rgb(160, 10, 10);
+    --botao: #F0B323;
+}
+
 .container_red {
-    background-color: #d60000;
+    background-color: var(--vermelho);
     height: 100%;
     display: flex;
     min-height: 100vh;
@@ -24,27 +32,27 @@
 }
 
 .logo img {
-    width: 350px;
+    width: 55vh;
     height: auto;
 }
 
 .opcao_login {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2.5rem;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 3.2rem;
     text-align: center;
-    color: rgb(160, 10, 10);
+    color: var(--fonte);
     width: 50%;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .footer {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 20px;
+    background-color: var(--branco);
+    color: var(--preto);
+    padding: 1.25rem;
     text-align: center;
 }
 
@@ -54,23 +62,24 @@
 
 .botao {
     display: flex;
-    padding: 12px 24px;
-    background-color: #ffffff;
-    color: rgb(179, 0, 0);
-    font-size: 16px;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--branco);
+    color: var(--fonte);
+    font-size: 1.7rem;
     font-family: Arial, sans-serif;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     cursor: pointer;
     text-align: center;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     transition: background 0.3s;
-    width: 300px;
-    height: 30px;
+    width: 50vh;
+    height: 8vh;
 }
 
 .botao:hover {
-    background-color: #F0B323;
-    color: rgb(255, 255, 255);
+    background-color: var(--botao);
+    color: var(--branco);
+    letter-spacing: 0.1rem;
 }

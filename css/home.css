@@ -32,7 +32,7 @@
 }
 
 .logo img {
-    width: 55vh;
+    width: 75%;
     height: auto;
 }
 
@@ -74,8 +74,8 @@
     justify-content: center;
     text-decoration: none;
     transition: background 0.3s;
-    width: 50vh;
-    height: 8vh;
+    width: 57%;
+    height: 8%;
 }
 
 .botao:hover {
@@ -100,4 +100,30 @@
 .registro a:hover {
     text-decoration: underline;
     font-size: 2.7vh;
+}
+
+/*responsividade para telas menores*/
+
+@media (max-width:1070px) {
+    .container_red {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .botao {
+        width: 60%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 915px){
+    .botao {
+        font-size: 3vh;
+    }
+
+    .registro {
+        font-size: 2.2vh;
+    }
 }

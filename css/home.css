@@ -81,8 +81,9 @@
 .botao:hover {
     background-color: var(--botao);
     color: var(--branco);
-    transition: 0.1s;
-    width: 55vh;
+    transition: 0.2s;
+    width: 58.5%;
+    height: 8.5%;
 }
 
 .registro {

@@ -17,10 +17,14 @@
 }
 
 .container_red {
-    background-color: var(--vermelho);
     height: 100%;
     display: flex;
     min-height: 100vh;
+    background: linear-gradient(rgba(160, 10, 10, 0.603), rgba(255, 255, 255, 0.219)), url(../images/familia_churrasco.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
@@ -28,10 +32,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}    
 
 .logo img {
-    width: 350px;
+    width: 500px;
     height: auto;
 }
 
@@ -122,7 +126,7 @@
     font-family: Arial, sans-serif;
 }
 
-.fundo_login {
+.login {
     margin-top: -15px;
     margin-bottom: -15px;
     background-color: var(--fundo);

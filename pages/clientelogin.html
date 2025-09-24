@@ -17,10 +17,17 @@
             <form class="form_login" onsubmit="event.preventDefault(); window.open('index.html', '_blank');">
                 <input type="text" id="username" class="form-field" placeholder="Usuário">
                 <input type="password" id="senha" class="form-field" placeholder="Senha">
+
                 <div class="form-buttons">
-                    <a href="#" class="botao-unico">Esqueci minha senha</a>
-                    <button type="submit" class="botao">Entrar</button>
+                    <label>
+                        <input type="checkbox" id="lembrar" name="lembrar">
+                        Lembre de mim
+                    </label>
+                    <a href="#" target="_blank">Esqueci minha senha</a>
                 </div>
+
+                <button type="submit" class="botao">Entrar</button>
+
             </form>
         </div>
     </div>

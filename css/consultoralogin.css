@@ -164,3 +164,13 @@ body {
         text-align: center;
     }
 }
+
+@media (min-width: 1400px) {
+    .botao_entrar {
+        height: 4vh;
+    }
+
+    .botao_entrar:hover {
+        height: 4.2vh;
+    }
+}

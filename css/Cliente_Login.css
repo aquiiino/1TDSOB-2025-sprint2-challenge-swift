@@ -132,7 +132,7 @@ body {
     padding: 0.5rem;
     font-size: 1rem;
     font-weight: 550;
-    height: 4vh;
+    height: 6vh;
     width: 20%;
     text-align: center;
 }
@@ -140,8 +140,8 @@ body {
 .botao_entrar:hover {
     background-color: var(--botao);
     color: var(--branco);
-    width: 21%;
-    height: 4.2vh;
+    width: 22%;
+    height: 6.2vh;
     transition: background 0.9s;
 }
 
@@ -165,3 +165,12 @@ body {
     }
 }
 
+@media (min-width: 1400px) {
+    .botao_entrar {
+        height: 4vh;
+    }
+
+    .botao_entrar:hover {
+        height: 4.2vh;
+    }
+}

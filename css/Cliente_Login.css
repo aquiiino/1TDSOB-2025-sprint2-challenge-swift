@@ -1,0 +1,140 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+:root {
+    --vermelho: #d60000;
+    --branco: rgb(255, 255, 255);
+    --preto: rgb(0, 0, 0);
+    --fonte: rgb(160, 10, 10);
+    --botao: #F0B323;
+    --fundo: #bb0000;
+}
+
+body {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: url(../images/churrasco_em_familia.jpg) center/cover no-repeat;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.lado_esquerdo {
+    flex: 1.5;
+}
+
+.lado_direito {
+    position: relative; /*criar camadas*/
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    padding: 30px 40px;
+    color: var(--fonte);
+    width: 30%;
+    height: auto;
+}
+
+.lado_direito::before { /*camada de trás*/
+    position: absolute;
+    content: "";
+    inset: 0;
+    box-shadow: 0 0 12px var(--branco);
+    backdrop-filter: blur(20px);
+    border: 3px solid var(--branco);
+    border-radius: 22px;
+    z-index: 0;
+    background-color: transparent;
+}
+
+.lado_direito > * {
+    position: relative;
+    z-index: 1;
+}
+
+.secao_login .img {
+    width: 200px; 
+    margin-bottom: 1rem;
+}
+
+.form_login {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_login input {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--branco);
+    font-size: 1.2rem;
+    width: 80%;
+    height: 4vh;
+    max-width: 300px;
+    justify-content: center;
+    text-align: center;
+    color: var(--preto);
+}
+
+
+.forms_link {
+    display:flex;
+    justify-content: space-between; /*joga cada um pra um lado*/
+    color: var(--branco);
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.forms_link label {
+    accent-color: var(--branco); /*fundo azul do quadrado quando clicamos*/
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 5px;
+}
+
+
+.forms_link a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.forms_link a:hover{
+    color: var(--botao);
+    text-decoration: underline;
+}
+
+.botao_entrar {
+    color: var(--preto);
+    background-color: var(--branco);
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 550;
+    height: 4vh;
+    width: 15%;
+}
+
+.botao_entrar:hover {
+    background-color: var(--botao);
+    color: var(--branco);
+    width: 16%;
+    height: 4.2vh;
+    transition: background 0.9s;
+}

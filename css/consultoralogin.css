@@ -1,118 +1,166 @@
-body {
+* {
+    font-family: "Montserrat", sans-serif;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
 }
 
-.container_red {
-    background-color: #d60000;
+:root {
+    --vermelho: #d60000;
+    --branco: rgb(255, 255, 255);
+    --preto: rgb(0, 0, 0);
+    --fonte: rgb(160, 10, 10);
+    --botao: #F0B323;
+    --fundo: #bb0000;
+}
+
+body {
     height: 100%;
-    display: flex;
-    min-height: 100vh;
 }
 
-.logo {
-    width: 50%;
+.container {
     display: flex;
+    height: 100vh;
+    width: 100%;
+    background: url(../images/vender_carne.png) center/cover no-repeat;
     align-items: center;
-    justify-content: center;
+    padding: 4rem;
+    gap: 2rem;
 }
 
-.logo img {
-    width: 350px;
+.lado_esquerdo {
+    flex: 1.5;
+}
+
+.lado_direito {
+    position: relative; /*criar camadas*/
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    padding: 2rem;
+    color: var(--fonte);
+    width: 100%;
+    max-width: 650px;
+    min-width: 280px;
     height: auto;
+    margin: auto;
 }
 
-.login {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    margin-top: 50px;
-    text-align: center;
-    color: rgb(160, 10, 10);
-    width: 50%;
-    justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-
+.lado_direito::before { /*camada de trás*/
+    position: absolute;
+    content: "";
+    inset: 0;
+    box-shadow: 0 0 12px var(--branco);
+    backdrop-filter: blur(20px);
+    border: 3px solid var(--branco);
+    border-radius: 22px;
+    z-index: 0;
+    background-color: transparent;
 }
 
-.footer {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 20px;
-    text-align: center;
+.lado_direito > * {
+    position: relative;
+    z-index: 1;
 }
 
-.footer p {
-    margin: 5px 0;
-}
-
-.botao {
-    display: block;
-    padding: 12px 24px;
-    background-color: #ffffff;
-    color: rgb(179, 0, 0);
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    border-radius: 12px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    transition: background 0.3s;
-    width: 120px;
-    border: none;
-
-}
-
-.botao:hover {
-    background-color: #F0B323;
-    color: rgb(255, 255, 255);
-}
-
-.form-field {
-    display: block;
-    padding: 12px 24px;
-    background-color: #ffffff;
-    color: rgb(179, 0, 0);
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    border-radius: 12px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    transition: background 0.3s;
-    width: 300px;
-    height: 30px;
-    border: none;
+.secao_login img {
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .form_login {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    margin-top: 70px;
-    text-align: center;
-}
-
-.form-buttons {
-    display: flex;
-    gap: 20px;
+    gap: 1.5rem;
     justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
-.botao-unico {
-    display: block;
-    padding: 12px 24px;
-    color: #F0B323;
-    font-family: Arial, sans-serif;
+.form_login input {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--branco);
+    font-size: 1.2rem;
+    width: 80%;
+    height: 4vh;
+    max-width: 300px;
+    justify-content: center;
+    text-align: center;
+    color: var(--preto);
 }
 
-.fundo_login {
-    margin-top: -15px;
-    margin-bottom: -15px;
-    background-color: #bb0000;
-    width: 80%;
-    height: 50%;
-    border-radius: 22px;
+
+.forms_link {
+    display:flex;
+    justify-content: space-between; /*joga cada um pra um lado*/
+    color: var(--branco);
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.forms_link label {
+    accent-color: var(--branco); /*fundo azul do quadrado quando clicamos*/
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 5px;
+}
+
+
+.forms_link a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.forms_link a:hover{
+    color: var(--botao);
+    text-decoration: underline;
+}
+
+.botao_entrar {
+    color: var(--preto);
+    background-color: var(--branco);
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 550;
+    height: 4vh;
+    width: 20%;
+    text-align: center;
+}
+
+.botao_entrar:hover {
+    background-color: var(--botao);
+    color: var(--branco);
+    width: 21%;
+    height: 4.2vh;
+    transition: background 0.9s;
+}
+
+@media (max-width: 1024px) {
+    
+    .lado_esquerdo {
+        display: none; /* some em tablets/celulares */
+    }
+
+    .lado_direito {
+        flex: 1;
+        max-width: 430px;
+    }
+}
+
+@media (max-width: 600px) {
+    .forms_link {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
 }

@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swift Club Consultora</title>
-  <link rel="stylesheet" href="../css/consultoralogin.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift Club: Login do cliente</title>
+    <link rel="stylesheet" href="../css/consultoralogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div class="container_red">
-        <div class="logo">
-            <img src="../images/SwiftClub_Consultora.png" alt="Icone Swift">
-        </div>   
-        <div class="login">
-            <div class="fundo_login">
-                <form class="form_login" onsubmit="event.preventDefault(); window.location.href='index.html';">
-                    <input type="text" id="username" class="form-field" placeholder="Usuário">
-                    <input type="password" id="senha" class="form-field" placeholder="Senha">
-                    <div class="form-buttons">
-                        <a href="#" class="botao-unico">Esqueci minha senha</a>
-                        <button type="submit" class="botao">Entrar</button> 
+    <div class="container">
+        <div class="lado_esquerdo"></div>
+        <div class="lado_direito">
+            <div class="secao_login">
+                <img src="../images/SwiftClub_Consultora.png" alt="Logo Swift Club Consultores">
+
+                <form class="form_login" onsubmit="event.preventDefault(); window.open('index.html', '_blank');">
+                    <input type="text" placeholder="Usuário" required>
+                    <input type="password" placeholder="Senha" required>
+
+                    <div class="forms_link">
+                        <label>
+                            <input type="checkbox">Lembre de mim
+                        </label>
+                        <a href="#">Esqueci minha senha</a>
                     </div>
+
+                    <button type="submit" class="botao_entrar">Entrar</button>
                 </form>
+                
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <p>&copy; 2025 - Swift Club</p>
-    </footer>
+
 </body>
+
 </html>

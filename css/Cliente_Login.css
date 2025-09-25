@@ -27,7 +27,8 @@ body {
     width: 100%;
     background: url(../images/churrasco_em_familia.jpg) center/cover no-repeat;
     align-items: center;
-    padding-right: 100px;
+    padding: 4rem;
+    gap: 2rem;
 }
 
 .lado_esquerdo {
@@ -41,10 +42,13 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 22px;
-    padding: 30px 40px;
+    padding: 2rem;
     color: var(--fonte);
-    width: 30%;
+    width: 100%;
+    max-width: 650px;
+    min-width: 280px;
     height: auto;
+    margin: auto;
 }
 
 .lado_direito::before { /*camada de trás*/
@@ -64,8 +68,8 @@ body {
     z-index: 1;
 }
 
-.secao_login .img {
-    width: 200px; 
+.secao_login img {
+    width: 100%;
     margin-bottom: 1rem;
 }
 
@@ -75,6 +79,7 @@ body {
     gap: 1.5rem;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .form_login input {
@@ -128,13 +133,35 @@ body {
     font-size: 1rem;
     font-weight: 550;
     height: 4vh;
-    width: 15%;
+    width: 20%;
+    text-align: center;
 }
 
 .botao_entrar:hover {
     background-color: var(--botao);
     color: var(--branco);
-    width: 16%;
+    width: 21%;
     height: 4.2vh;
     transition: background 0.9s;
 }
+
+@media (max-width: 1024px) {
+    
+    .lado_esquerdo {
+        display: none; /* some em tablets/celulares */
+    }
+
+    .lado_direito {
+        flex: 1;
+        max-width: 430px;
+    }
+}
+
+@media (max-width: 600px) {
+    .forms_link {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}
+

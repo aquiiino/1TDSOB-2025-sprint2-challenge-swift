@@ -41,10 +41,11 @@ section {
   justify-content: space-between;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  height: 150px;
 }
 
 .logo img {
-  width: 150px;
+  width: 230px;
   height: auto;
 }
 
@@ -74,7 +75,7 @@ section {
   font-size: 2.7rem;
 }
 
-/* MOBILE MENU */
+/* MOBILE MENU qual classe é essa? não achei (isa) 
 .mobile-menu {
   display: none;
   cursor: pointer;
@@ -86,44 +87,54 @@ section {
   background: var(--branco);
   margin: 6px;
   transition: 0.3s;
-}
+} comentei tudo para ficar em evidência*/
 
 /* HERO */
-.hero {
+.hero{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--fundo2);
+  background: linear-gradient(to left, rgba(209, 7, 7, 0.726), rgba(0, 0, 0, 0.363)), url(../images/carne_index.jpg) center/ cover no-repeat;
   color: white;
   padding: 40px;
+  max-height: 50vh;
+  margin-top: 7%;
 }
 
-.hero-text h1,
-.hero-text h2 {
-  font-size: 45px;
+.boas-vindas h1{
+  text-align: left;
+  font-size: 6rem;
+  margin-left: 25px;
+}
+
+.compre h2,
+.compre h3 {
+  font-size: 2.5rem;
   margin: 0;
 }
 
-.hero-text p {
-  font-size: 32px;
-  margin: 10px 0;
+.compre p {
+  font-size: 2rem;
+  margin: 20px 10px;
   font-weight: 600;
 }
 
-.hero-text button {
+.compre button {
   background: var(--cinza);
   color: white;
   border: none;
   padding: 12px 40px;
-  font-size: 18px;
+  font-size: 1.7rem;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 501;
+  width: 30vh
 }
 
-.hero-image img {
-  border-radius: 12px;
-  max-width: 300px;
+.compre button:hover {
+  background-color: var(--branco);
+  color: var(--vermelho);
+  transition: background 0.3s;
 }
 
 /* SECTIONS */

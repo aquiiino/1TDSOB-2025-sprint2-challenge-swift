@@ -18,6 +18,7 @@
   --fundo: #bb0000;
   --fundo2: #d32f2f;
   --cinza: #483C32;
+  --margem: 120px
 }
 
 section {
@@ -42,17 +43,17 @@ section {
   justify-content: space-between;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  height: 150px;
+  height: var(--margem);
 }
 
 .logo img {
-  width: 230px;
+  width: 190px;
   height: auto;
 }
 
 .navbar a {
   margin: 0 1rem;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: var(--preto);
   font-weight: 520;
 }
@@ -61,19 +62,19 @@ section {
   color: var(--vermelho);
   border-bottom: 0.1rem solid var(--vermelho);
   padding-bottom: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .icons i {
   color: var(--preto);
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   margin-left: 25px;
   cursor: pointer;
 }
 
 .icons i:hover {
   color: var(--vermelho);
-  font-size: 2.7rem;
+  font-size: 1.9rem;
 }
 
 /* MOBILE MENU qual classe é essa? não achei (isa) 
@@ -99,24 +100,24 @@ section {
   color: white;
   padding: 40px;
   max-height: 50vh;
-  margin-top: 7%;
+  margin-top: var(--margem); 
   text-align: center;
 }
 
 .boas-vindas h1{
   text-align: left;
-  font-size: 6rem;
+  font-size: 3.5rem;
   margin-left: 25px;
 }
 
 .compre h2,
 .compre h3 {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   margin: 0;
 }
 
 .compre p {
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin: 20px 10px;
   font-weight: 600;
 }
@@ -126,11 +127,11 @@ section {
   color: white;
   border: none;
   padding: 12px 40px;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 501;
-  width: 30vh
+  min-width: 20vh
 }
 
 .compre button:hover {
@@ -182,7 +183,7 @@ section {
 
 
 /* MOBILE RESPONSIVE */
-@media (max-width: 999px) {
+/* @media (max-width: 999px) {
   .menu {
     position: absolute;
     top: 70px;
@@ -233,4 +234,4 @@ section {
       transform: translateX(0);
     }
   }
-}
+} */

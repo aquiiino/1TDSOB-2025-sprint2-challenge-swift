@@ -321,6 +321,17 @@ section {
 }
 
 
+/*bestsellers*/
+
+
+.bestSellers h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  text-decoration:underline var(--fundo);
+  text-underline-offset: 10px;
+}
+
 .bestSellers .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(1rem,0.5fr));  /*como queremos organizar nossas colunas; repetir a qntd de vezes que forem necessarias sendo que vai ser automatico, e o tamanho minimo sera 30rem e o max 1fr (tela completa */
@@ -367,6 +378,71 @@ section {
 }
 
 .bestSellers .box-container .box button:hover {
+  background-color: var(--fundo);
+  color: var(--branco);
+  width: 14vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+/*embalados*/
+
+.packaged h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  text-decoration:underline var(--fundo);
+  text-underline-offset: 10px;
+}
+
+.packaged .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1rem,0.5fr));  /*como queremos organizar nossas colunas; repetir a qntd de vezes que forem necessarias sendo que vai ser automatico, e o tamanho minimo sera 30rem e o max 1fr (tela completa */
+  gap: 1.5rem;
+}
+
+.packaged .box-container .box {
+  text-align: center;
+}
+
+.packaged .box-container .box img {
+  height: 10rem;;
+}
+
+.packaged .box-container .box h3 {
+  color: var(--preto);
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+.packaged .box-container .box .price {
+  color: var(--preto);
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.packaged .box-container .box span {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+
+.packaged .box-container .box button {
+  background-color: var(--branco);
+  font-size: 1rem;
+  margin-top: 30px;
+  border: 1px solid var(--fundo);
+  border-radius: 8px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 5vh;
+  width: 13vw;
+}
+
+.packaged .box-container .box button:hover {
   background-color: var(--fundo);
   color: var(--branco);
   width: 14vw;

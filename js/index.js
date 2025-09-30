@@ -9,3 +9,5 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'Cliente_Login.html'; // redireciona se não logado
     }
 });
+
+

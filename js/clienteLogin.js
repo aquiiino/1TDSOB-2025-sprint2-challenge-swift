@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const nome = document.getElementById('nomeCliente').value;
         const senha = form.senhaCliente.value;
 
-        // Simulação simples do login
+        // simulação simples do login
         if (nome && senha) {
             localStorage.setItem('clienteLogado', nome); // salva o nome
             window.location.href = '../pages/index.html';       // redireciona

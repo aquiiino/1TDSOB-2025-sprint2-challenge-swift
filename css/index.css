@@ -146,16 +146,16 @@ section {
 .categories .cards {
   display: flex;
   flex-direction: row;
-  gap: 4.5rem;
+  gap: 2.5rem;
   align-items: center;
   justify-content: center;
-  height: 5vh;
+  height: 3vh;
   text-align: center;
 }
 
 .categories .cards h4 {
   font-weight: lighter;
-  font-size: 1.7rem;
+  font-size: 1.1rem;
 }
 
 .categories .cards .card {
@@ -164,21 +164,21 @@ section {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.7rem;
+  font-size: 1.1rem;
 }
 
 .categories .cards h4:hover {
   color: var(--vermelho);
   font-weight: bold;
   border-bottom: 0.1rem solid var(--vermelho);
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 
 .categories .cards .card:hover {
   color: var(--vermelho);
   font-weight: bold;
   border-bottom: 0.1rem solid var(--vermelho);
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 
 

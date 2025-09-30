@@ -183,6 +183,67 @@ section {
   cursor: pointer;
 }
 
+/*PONTOS*/
+.pontos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pontos img {
+  height: 2vh;
+}
+
+.pontos .meus_pontos {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  border: 2px solid var(--fundo);
+  flex: 1;
+}
+
+.pontos .meus_pontos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.pontos .meus_pontos h3{
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.pontos .meus_pontos h4 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 450;
+}
+
+.pontos .meus_pontos button {
+  border: 2px solid var(--fundo);
+  background-color: var(--branco);
+  font-size: 1.2rem;
+  height: 6vh;
+  width: 20vw;
+  border-radius: 8px;
+}
+
+.pontos .meus_pontos button:hover {
+  background-color: var(--fundo);
+  color: var(--branco);
+  width: 21vw;
+  cursor: pointer;
+}
+
+.pontos .missoes {
+  flex: 1;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--fundo);
+  padding: 30px;
+}
+
 /*PROMOÇÕES*/
 
 .promotions h2 {

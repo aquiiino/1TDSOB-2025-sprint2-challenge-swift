@@ -189,8 +189,9 @@ section {
   justify-content: space-between;
 }
 
-.pontos img {
-  height: 2vh;
+.pontos .meus_pontos img {
+  height: 5vh;
+  justify-content: center;
 }
 
 .pontos .meus_pontos {
@@ -243,6 +244,33 @@ section {
   border: 2px solid var(--fundo);
   padding: 30px;
 }
+
+.pontos .missoes h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pontos .missoes img {
+  height: 2vh;
+}
+
+.pontos .missoes li{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.pontos .missoes a{
+  color: var(--preto);
+  font-size: 1rem;
+}
+
+.pontos .missoes a:hover{
+  cursor: pointer;
+  color: var(--fundo);
+}
+
 
 /*PROMOÇÕES*/
 

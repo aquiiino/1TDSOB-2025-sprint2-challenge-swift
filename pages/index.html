@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar</title>
+  <title>Página Inicial</title>
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
@@ -28,8 +28,7 @@
 
       <div class="icons">
         <i class="fa-solid fa-search"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
-        <i class="fa-solid fa-user"></i>
+        <a href="card.html"><i class="fa-solid fa-cart-shopping"></i></a>        <i class="fa-solid fa-user"></i>
       </div>
 
     </section>
@@ -48,7 +47,6 @@
     </div>
     </div>
   </section>
-  <script src="../js/index.js"></script>
 
   <section class="categories" id="categories">
     <div class="cards">
@@ -109,137 +107,212 @@
   </section>
 
 
-  <section class="promotions" id="promotions">
-    <h2>No Precinho Para Você</h2>
-    <div class="box-container">
+<section class="promotions" id="promotions">
+  <h2>No Precinho Para Você</h2>
+  <div class="box-container">
 
-      <div class="box">
-        <img src="../promocoes/carne.png" alt="Pichanha">
-        <h3>Picanha 1kg</h3>
-        <div class="price">R$95,90 <span>R$107,90</span></div>
-        <button>Adicione ao carrinho</button>
-      </div>
-
-      <div class="box">
-        <img src="../promocoes/linguica_toscana.jpg" alt="Linguiça Toscana">
-        <h3>Linguiça Toscana 700g</h3>
-        <div class="price">R$15,00 <span>R$17,90</span></div>
-        <button>Adicione ao carrinho</button>
-      </div>
-
-      <div class="box">
-        <img src="../promocoes/fila_peito.jpg" alt="Filé de Peito de Frango">
-        <h3>Filé de Peito Linha Mais 1kg</h3>
-        <div class="price">R$20,90 <span>R$22,90</span></div>
-        <button>Adicione ao carrinho</button>
-      </div>
-
-      <div class="box">
-        <img src="../promocoes/salmao.jpg" alt="Filé de Salmão">
-        <h3>Filé de Salmão 500g</h3>
-        <div class="price">R$40,90 <span>R$49,90</span></div>
-        <button>Adicione ao carrinho</button>
-      </div>
-
-      <div class="box">
-        <img src="../promocoes/farofa.jpg" alt="Farofa">
-        <h3>Farofa Tradicional 400g</h3>
-        <div class="price">R$9,90 <span>R$11,90</span></div>
-        <button>Adicione ao carrinho</button>
-      </div>
-
+    <div class="box">
+      <img src="../promocoes/carne.png" alt="Pichanha">
+      <h3>Picanha 1kg</h3>
+      <div class="price">R$95,90 <span>R$107,90</span></div>
+      <button class="add-to-cart"
+              data-name="Picanha 1kg"
+              data-price="95.90"
+              data-image="../promocoes/carne.png">
+        Adicione ao carrinho
+      </button>
     </div>
-  </section>
 
-
-  <section class="bestSellers" id="bestSellers">
-    <h2>Mais vendidos</h2>
-    <div class="box-container">
-
-      <div class="box">
-        <img src="../bestSellers/fileMignon.jpg" alt="Filé Mignon">
-        <h3>Filé Mignon em Bifes 1kg</h3>
-        <div class="price">R$95,90</div>
-        <button>Adicione ao carrinho</button>
-      </div>
-
-      <div class="box">
-        <img src="../bestSellers/hamburguerBovino.jpg" alt="hamburguerBovino">
-        <h3>Hambúrguer Bovino</h3>
-        <div class="price">R$15,00</div>
-        <button>Adicione ao carrinho</button>
-      </div>
-
-      <div class="box">
-        <img src="../bestSellers/picanha.jpg" alt="PicanhaFatiada">
-        <h3>Picanha Fatiada 1kg</h3>
-        <div class="price">R$89,90</div>
-        <button>Adicione ao carrinho</button>
-      </div>
-
-      <div class="box">
-        <img src="../bestSellers/picanhaPeca.jpg" alt="picanhaPeca">
-        <h3>Picanha Peça</h3>
-        <div class="price">R$120,90</div>
-        <button>Adicione ao carrinho</button>
-      </div>
-
-      <div class="box">
-        <img src="../bestSellers/salmao.jpg" alt="salmao">
-        <h3>Salmão Premium 500g</h3>
-        <div class="price">R$9,90</div>
-        <button>Adicione ao carrinho</button>
-      </div>
-      
+    <div class="box">
+      <img src="../promocoes/linguica_toscana.jpg" alt="Linguiça Toscana">
+      <h3>Linguiça Toscana 700g</h3>
+      <div class="price">R$15,00 <span>R$17,90</span></div>
+      <button class="add-to-cart"
+              data-name="Linguiça Toscana 700g"
+              data-price="15.00"
+              data-image="../promocoes/linguica_toscana.jpg">
+        Adicione ao carrinho
+      </button>
     </div>
-  </section>
 
-
-    <section class="packaged" id="packaged">
-    <h2>Embalados</h2>
-    <div class="box-container">
-
-      <div class="box">
-        <img src="../embalados/embaladosBisteca.jpg" alt="Bisteca">
-        <h3>Bisteca 1kg</h3>
-        <div class="price">R$95,90</div>
-        <button>Adicione ao carrinho</button>
-      </div>
-
-      <div class="box">
-        <img src="../embalados/embaladosCoracao.jpg" alt="Coracao">
-        <h3>Coração 1kg </h3>
-        <div class="price">R$15,00</div>
-        <button>Adicione ao carrinho</button>
-      </div>
-
-      <div class="box">
-        <img src="../embalados/embaladosCoxaDeAasa.jpg" alt="CoxaDeAsa">
-        <h3>Coxa de Asa 1kg</h3>
-        <div class="price">R$20,90</div>
-        <button>Adicione ao carrinho</button>
-      </div>
-
-      <div class="box">
-        <img src="../embalados/embaladosFileDePeito.jpg" alt="FileDePeito">
-        <h3>Filé De Peito 1kg</h3>
-        <div class="price">R$40,90</div>
-        <button>Adicione ao carrinho</button>
-      </div>
-
-      <div class="box">
-        <img src="../embalados/embaladosLinguiça.jpg" alt="Farofa">
-        <h3>Linguiça 1kg</h3>
-        <div class="price">R$9,90</div>
-        <button>Adicione ao carrinho</button>
-      </div>
-
-
+    <div class="box">
+      <img src="../promocoes/fila_peito.jpg" alt="Filé de Peito de Frango">
+      <h3>Filé de Peito Linha Mais 1kg</h3>
+      <div class="price">R$20,90 <span>R$22,90</span></div>
+      <button class="add-to-cart"
+              data-name="Filé de Peito Linha Mais 1kg"
+              data-price="20.90"
+              data-image="../promocoes/fila_peito.jpg">
+        Adicione ao carrinho
+      </button>
     </div>
-  </section>
+
+    <div class="box">
+      <img src="../promocoes/salmao.jpg" alt="Filé de Salmão">
+      <h3>Filé de Salmão 500g</h3>
+      <div class="price">R$40,90 <span>R$49,90</span></div>
+      <button class="add-to-cart"
+              data-name="Filé de Salmão 500g"
+              data-price="40.90"
+              data-image="../promocoes/salmao.jpg">
+        Adicione ao carrinho
+      </button>
+    </div>
+
+    <div class="box">
+      <img src="../promocoes/farofa.jpg" alt="Farofa">
+      <h3>Farofa Tradicional 400g</h3>
+      <div class="price">R$9,90 <span>R$11,90</span></div>
+      <button class="add-to-cart"
+              data-name="Farofa Tradicional 400g"
+              data-price="9.90"
+              data-image="../promocoes/farofa.jpg">
+        Adicione ao carrinho
+      </button>
+    </div>
+
+  </div>
+</section>
 
 
 
+<section class="bestSellers" id="bestSellers">
+  <h2>Mais vendidos</h2>
+  <div class="box-container">
+
+    <div class="box">
+      <img src="../bestSellers/fileMignon.jpg" alt="Filé Mignon">
+      <h3>Filé Mignon em Bifes 1kg</h3>
+      <div class="price">R$95,90</div>
+      <button class="add-to-cart"
+              data-name="Filé Mignon em Bifes 1kg"
+              data-price="95.90"
+              data-image="../bestSellers/fileMignon.jpg">
+        Adicione ao carrinho
+      </button>
+    </div>
+
+    <div class="box">
+      <img src="../bestSellers/hamburguerBovino.jpg" alt="Hambúrguer Bovino">
+      <h3>Hambúrguer Bovino</h3>
+      <div class="price">R$15,00</div>
+      <button class="add-to-cart"
+              data-name="Hambúrguer Bovino"
+              data-price="15.00"
+              data-image="../bestSellers/hamburguerBovino.jpg">
+        Adicione ao carrinho
+      </button>
+    </div>
+
+    <div class="box">
+      <img src="../bestSellers/picanha.jpg" alt="Picanha Fatiada">
+      <h3>Picanha Fatiada 1kg</h3>
+      <div class="price">R$89,90</div>
+      <button class="add-to-cart"
+              data-name="Picanha Fatiada 1kg"
+              data-price="89.90"
+              data-image="../bestSellers/picanha.jpg">
+        Adicione ao carrinho
+      </button>
+    </div>
+
+    <div class="box">
+      <img src="../bestSellers/picanhaPeca.jpg" alt="Picanha Peça">
+      <h3>Picanha Peça</h3>
+      <div class="price">R$120,90</div>
+      <button class="add-to-cart"
+              data-name="Picanha Peça"
+              data-price="120.90"
+              data-image="../bestSellers/picanhaPeca.jpg">
+        Adicione ao carrinho
+      </button>
+    </div>
+
+    <div class="box">
+      <img src="../bestSellers/salmao.jpg" alt="Salmão Premium">
+      <h3>Salmão Premium 500g</h3>
+      <div class="price">R$9,90</div>
+      <button class="add-to-cart"
+              data-name="Salmão Premium 500g"
+              data-price="9.90"
+              data-image="../bestSellers/salmao.jpg">
+        Adicione ao carrinho
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="packaged" id="packaged">
+  <h2>Embalados</h2>
+  <div class="box-container">
+
+    <div class="box">
+      <img src="../embalados/embaladosBisteca.jpg" alt="Bisteca">
+      <h3>Bisteca 1kg</h3>
+      <div class="price">R$95,90</div>
+      <button class="add-to-cart"
+              data-name="Bisteca 1kg"
+              data-price="95.90"
+              data-image="../embalados/embaladosBisteca.jpg">
+        Adicione ao carrinho
+      </button>
+    </div>
+
+    <div class="box">
+      <img src="../embalados/embaladosCoracao.jpg" alt="Coracao">
+      <h3>Coração 1kg</h3>
+      <div class="price">R$15,00</div>
+      <button class="add-to-cart"
+              data-name="Coração 1kg"
+              data-price="15.00"
+              data-image="../embalados/embaladosCoracao.jpg">
+        Adicione ao carrinho
+      </button>
+    </div>
+
+    <div class="box">
+      <img src="../embalados/embaladosCoxaDeAasa.jpg" alt="CoxaDeAsa">
+      <h3>Coxa de Asa 1kg</h3>
+      <div class="price">R$20,90</div>
+      <button class="add-to-cart"
+              data-name="Coxa de Asa 1kg"
+              data-price="20.90"
+              data-image="../embalados/embaladosCoxaDeAasa.jpg">
+        Adicione ao carrinho
+      </button>
+    </div>
+
+    <div class="box">
+      <img src="../embalados/embaladosFileDePeito.jpg" alt="FileDePeito">
+      <h3>Filé De Peito 1kg</h3>
+      <div class="price">R$40,90</div>
+      <button class="add-to-cart"
+              data-name="Filé De Peito 1kg"
+              data-price="40.90"
+              data-image="../embalados/embaladosFileDePeito.jpg">
+        Adicione ao carrinho
+      </button>
+    </div>
+
+    <div class="box">
+      <img src="../embalados/embaladosLinguiça.jpg" alt="Linguiça">
+      <h3>Linguiça 1kg</h3>
+      <div class="price">R$9,90</div>
+      <button class="add-to-cart"
+              data-name="Linguiça 1kg"
+              data-price="9.90"
+              data-image="../embalados/embaladosLinguiça.jpg">
+        Adicione ao carrinho
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+<script src="../js/index.js"></script>
 
 </body>
 

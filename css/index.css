@@ -559,6 +559,8 @@ footer {
 .footer-logo {
   display: flex;
   align-items: center;
+  color: var(--branco);
+  flex-direction: column;
 }
 
 .footer-logo img {
@@ -566,6 +568,7 @@ footer {
   /* tamanho da logo */
   height: auto;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 /* Redes sociais */

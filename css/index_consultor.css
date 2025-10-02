@@ -20,3 +20,141 @@
   --cinza: #483C32;
   --margem: 120px
 }
+
+section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 2px solid var(--fundo);
+  background-color: var(--branco);
+}
+
+.header section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  height: var(--margem);
+}
+
+.logo img {
+  width: 12rem;
+  height: auto;
+}
+
+.navbar a {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  color: var(--preto);
+  font-weight: 520;
+}
+
+.navbar a:hover {
+  color: var(--vermelho);
+  border-bottom: 0.1rem solid var(--vermelho);
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons i {
+  color: var(--preto);
+  font-size: 1.7rem;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  color: var(--vermelho);
+  font-size: 1.9rem;
+}
+
+.icons .perfil {
+  position: relative;
+  display: inline-block;
+}
+
+.icons .perfil button {
+  background: var(--branco);
+}
+
+.icons .perfil .menu {
+  position: absolute;
+  right:0;
+  background: var(--branco);
+  border: 2px solid var(--fundo);
+  border-radius: 6px;
+  list-style: none;
+  padding: 0.5rem;
+  min-width: 180px;
+}
+
+.icons .perfil .menu li{
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.icons .perfil .menu li:hover{
+  background: var(--fundo2);
+  color: var(--branco);
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to left, rgba(209, 7, 7, 0.726), rgba(0, 0, 0, 0.363)), url(../images/vendedor.jpeg) top/cover no-repeat;
+  color: white;
+  padding: 40px;
+  min-height: 40vh;
+  margin-top: var(--margem);
+  text-align: center;
+}
+
+.boas-vindas h1 {
+  text-align: left;
+  font-size: 3.5rem;
+  margin-left: 25px;
+}
+
+.compre h2,
+.compre h3 {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.compre p {
+  font-size: 1.3rem;
+  margin: 20px 10px;
+  font-weight: 600;
+}
+
+.compre button {
+  background: var(--cinza);
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 501;
+  min-width: 20vh
+}
+
+.compre button:hover {
+  background-color: var(--branco);
+  color: var(--vermelho);
+  transition: background 0.3s;
+}

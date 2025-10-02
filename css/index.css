@@ -216,9 +216,14 @@ section {
   color: black;
   border-radius: 12px;
   padding: 1rem;
-  width: 200px;
+  width: 30vh;
+  height: 17vh;
   text-align: center;
-  transition: transform 0.2s ease;
+}
+
+.premio h4{
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
 
 .premio:hover {

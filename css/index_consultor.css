@@ -115,10 +115,10 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to left, rgba(209, 7, 7, 0.726), rgba(0, 0, 0, 0.363)), url(../images/vendedor.jpeg) top/cover no-repeat;
+  background: linear-gradient(to left, rgba(8, 0, 0, 0.452), rgba(0, 0, 0, 0.144)), url(../images/vendedor.jpeg) top/cover no-repeat;
   color: white;
   padding: 40px;
-  min-height: 40vh;
+  min-height: 35vh;
   margin-top: var(--margem);
   text-align: center;
 }
@@ -133,6 +133,7 @@ section {
 .compre h3 {
   font-size: 1.7rem;
   margin: 0;
+  margin-bottom: 13px;
 }
 
 .compre p {
@@ -141,20 +142,134 @@ section {
   font-weight: 600;
 }
 
-.compre button {
-  background: var(--cinza);
-  color: white;
-  border: none;
-  padding: 12px 40px;
-  font-size: 1.3rem;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 501;
-  min-width: 20vh
+/*PONTOS*/
+.recompensas {
+  padding: 2rem;
+  color: var(--branco);
+  text-align: center;
+  background: linear-gradient(135deg, #d60000, #bb0000);
+  width: 100%;
 }
 
-.compre button:hover {
-  background-color: var(--branco);
-  color: var(--vermelho);
-  transition: background 0.3s;
+.recompensas h2 {
+  margin-bottom: 20px;
+}
+
+.pontos {
+  background: rgb(255, 255, 255);
+  color: var(--fonte);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.pontos-qntd {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pontos-qntd img {
+  height: 7vh;
+  margin-bottom: 5px;
+}
+
+.recompensas-lista {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.premio {
+  background: white;
+  color: black;
+  border-radius: 12px;
+  padding: 1rem;
+  min-height: 30vh;
+  min-height: 17vh;
+  text-align: center;
+}
+
+.premio h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.premio:hover {
+  transform: translateY(-5px);
+}
+
+.missoes {
+  padding: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.missoes h3 {
+  font-size: 1.3rem;
+}
+
+.animacoes {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/*ANIMAÇÃO MISSÕES*/
+
+.flip_container {
+  perspective: 1000px;   /* profundidade do 3D */
+  min-width: 22vh;
+  min-height: 22vh;
+  cursor: pointer;
+}
+
+.flip_card { /*toda largura e altura do container*/
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d; /*presenva a profundidade 3d*/
+  transition: transform 0.6s;
+  z-index: 1;
+}
+
+.flip_container.clicked .flip_card { /*quando eu clicar no container, o card vira*/
+  transform: rotateY(180deg); /*gira 180*/
+}
+
+.flip_face {
+  position: absolute; /*uma face sobre a outra*/
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* esconde o lado de trás */
+  overflow: hidden; /*corta conteudo alem das bordas*/
+}
+
+.card_front {
+  background: url(../images/estrela_missao.png) center/cover no-repeat; /*parte da frente do card*/
+  color: var(--preto);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.card_back {  /*parte de tras do card*/
+  background: white;
+  color: var(--preto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transform: rotateY(180deg); /*rotaciona o verso junto*/
+  border-radius: 200px;
 }

@@ -170,8 +170,10 @@ section {
 /*PONTOS*/
 .recompensas {
   padding: 2rem;
-  color: white;
+  color: var(--branco);
   text-align: center;
+  background: linear-gradient(135deg, #d60000, #bb0000);
+  width: 100%;
 }
 
 .recompensas h2 {
@@ -179,7 +181,8 @@ section {
 }
 
 .pontos {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgb(255, 255, 255);
+  color: var(--fonte);
   padding: 1.5rem;
   border-radius: 12px;
   margin-bottom: 2rem;
@@ -190,6 +193,15 @@ section {
   font-size: 2.5rem;
   font-weight: bold;
   margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.pontos-qntd img {
+  height: 5vh;
+  margin-bottom: 5px;
 }
 
 .recompensas-lista {
@@ -215,7 +227,6 @@ section {
 
 .missoes {
   text-align: left;
-  background: rgba(255,255,255,0.1);
   padding: 1rem;
   border-radius: 12px;
 }
@@ -293,65 +304,6 @@ section {
   width: 14vw;
   font-weight: bold;
   cursor: pointer;
-}
-
-.recompensas {
-  padding: 2rem;
-  background: linear-gradient(135deg, #d60000, #bb0000);
-  color: white;
-  text-align: center;
-}
-
-.pontos-card {
-  background: rgba(255, 255, 255, 0.15);
-  padding: 1.5rem;
-  border-radius: 12px;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-.pontos-numero {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-top: 0.5rem;
-}
-
-.recompensas-lista {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.card {
-  background: white;
-  color: black;
-  border-radius: 12px;
-  padding: 1rem;
-  width: 200px;
-  text-align: center;
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.missoes {
-  text-align: left;
-  background: rgba(255,255,255,0.1);
-  padding: 1rem;
-  border-radius: 12px;
-}
-
-.missoes ul {
-  list-style: none;
-  padding: 0;
-}
-
-.missoes li {
-  margin: 0.5rem 0;
-  font-size: 1rem;
 }
 
 

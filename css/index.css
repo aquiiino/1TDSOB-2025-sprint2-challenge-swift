@@ -451,60 +451,60 @@ section {
 }
 
 
-    footer {
-      background-color: #b91010;
-      color: #fff;
-      padding: 20px 40px;
-    }
+footer {
+  background-color: #b91010;
+  color: #fff;
+  padding: 20px 40px;
+}
 
-    .footer-container {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-    .footer-logo {
-      display: flex;
-      align-items: center;
-    }
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
 
-    .footer-logo img {
-      width: 170px;  /* tamanho da logo */
-      height: auto;
-      margin-right: 15px;
-    }
+.footer-logo img {
+  width: 170px;  /* tamanho da logo */
+  height: auto;
+  margin-right: 15px;
+}
 
     /* Redes sociais */
-    .footer-social {
-      display: flex;
-      gap: 20px;
-      font-size: 22px;
-    }
+.footer-social {
+  display: flex;
+  gap: 20px;
+  font-size: 22px;
+}
 
-    .footer-social a {
-      color: #d4d4d4;
-      transition: color 0.3s;
-    }
+.footer-social a {
+  color: #d4d4d4;
+  transition: color 0.3s;
+}
 
-    .footer-social a:hover {
-      color: #fff; /* muda cor ao passar o mouse */
-    }
+.footer-social a:hover {
+  color: #fff; /* muda cor ao passar o mouse */
+}
 
     /* Copy centralizado */
-    .footer-copy {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 14px;
-      width: 100%;
-    }
+.footer-copy {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+}
 
     /* Responsivo */
-    @media (max-width: 600px) {
-      .footer-container {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}

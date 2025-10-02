@@ -32,7 +32,7 @@ section {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 99%;
+  z-index: 1000;
   border-bottom: 2px solid var(--fundo);
   background-color: var(--branco);
 }
@@ -251,10 +251,9 @@ section {
 /*ANIMAÇÃO MISSÕES*/
 
 .flip_container {
-  perspective: 1000px;
-  /* profundidade do 3D */
-  width: 17vh;
-  height: 17vh;
+  perspective: 1000px;   /* profundidade do 3D */
+  min-width: 20vh;
+  min-height: 20vh;
   cursor: pointer;
 }
 
@@ -264,6 +263,7 @@ section {
   position: relative;
   transform-style: preserve-3d; /*presenva a profundidade 3d*/
   transition: transform 0.6s;
+  z-index: 1;
 }
 
 .flip_container.clicked .flip_card { /*quando eu clicar no container, o card vira*/
@@ -285,7 +285,7 @@ section {
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
@@ -295,8 +295,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1rem;
   transform: rotateY(180deg); /*rotaciona o verso junto*/
   border-radius: 200px;
 }

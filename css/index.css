@@ -168,91 +168,66 @@ section {
 }
 
 /*PONTOS*/
+.recompensas {
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.recompensas h2 {
+  margin-bottom: 20px;
+}
+
 .pontos {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.pontos-qntd {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.recompensas-lista {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.pontos .meus_pontos img {
-  height: 5vh;
-  justify-content: center;
-}
-
-.pontos .meus_pontos {
-  justify-content: center;
-  align-items: center;
+.premio {
+  background: white;
+  color: black;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 200px;
   text-align: center;
-  padding: 30px;
-  border: 2px solid var(--fundo);
-  flex: 1;
+  transition: transform 0.2s ease;
 }
 
-.pontos .meus_pontos h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.premio:hover {
+  transform: translateY(-5px);
 }
 
-.pontos .meus_pontos h3{
-  font-size: 1.7rem;
-  margin-bottom: 20px;
-  font-weight: 500;
+.missoes {
+  text-align: left;
+  background: rgba(255,255,255,0.1);
+  padding: 1rem;
+  border-radius: 12px;
 }
 
-.pontos .meus_pontos h4 {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
-  font-weight: 450;
+.missoes ul {
+  list-style: none;
+  padding: 0;
 }
 
-.pontos .meus_pontos button {
-  border: 2px solid var(--fundo);
-  background-color: var(--branco);
-  font-size: 1.2rem;
-  height: 6vh;
-  width: 20vw;
-  border-radius: 8px;
-}
-
-.pontos .meus_pontos button:hover {
-  background-color: var(--fundo);
-  color: var(--branco);
-  width: 21vw;
-  cursor: pointer;
-}
-
-.pontos .missoes {
-  flex: 1;
-  margin-right: 30px;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--fundo);
-  padding: 30px;
-}
-
-.pontos .missoes h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.pontos .missoes img {
-  height: 2vh;
-}
-
-.pontos .missoes li{
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  margin-left: 20px;
-}
-
-.pontos .missoes a{
-  color: var(--preto);
+.missoes li {
+  margin: 0.5rem 0;
   font-size: 1rem;
-}
-
-.pontos .missoes a:hover{
-  cursor: pointer;
-  color: var(--fundo);
 }
 
 

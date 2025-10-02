@@ -15,7 +15,7 @@ Este projeto contém todos os códigos e materiais desenvolvidos pelos integrant
 - Danilo Aquino
 - Elzo Íthallo
 - Matheus Leodegario
--
+- Isadora Maciel
 -
 
 ## Status

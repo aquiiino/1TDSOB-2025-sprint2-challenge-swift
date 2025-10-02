@@ -78,7 +78,7 @@ section {
 }
 
 
-.hero{
+.hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,11 +86,11 @@ section {
   color: white;
   padding: 40px;
   max-height: 50vh;
-  margin-top: var(--margem); 
+  margin-top: var(--margem);
   text-align: center;
 }
 
-.boas-vindas h1{
+.boas-vindas h1 {
   text-align: left;
   font-size: 3.5rem;
   margin-left: 25px;
@@ -186,7 +186,7 @@ section {
   padding: 1.5rem;
   border-radius: 12px;
   margin-bottom: 2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .pontos-qntd {
@@ -196,11 +196,10 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
 }
 
 .pontos-qntd img {
-  height: 5vh;
+  height: 7vh;
   margin-bottom: 5px;
 }
 
@@ -216,12 +215,12 @@ section {
   color: black;
   border-radius: 12px;
   padding: 1rem;
-  width: 30vh;
-  height: 17vh;
+  min-height: 30vh;
+  min-height: 17vh;
   text-align: center;
 }
 
-.premio h4{
+.premio h4 {
   font-size: 1rem;
   margin-bottom: 10px;
 }
@@ -231,20 +230,79 @@ section {
 }
 
 .missoes {
-  text-align: left;
   padding: 1rem;
-  border-radius: 12px;
+  display: flex;
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.missoes ul {
-  list-style: none;
-  padding: 0;
+.missoes h3 {
+  font-size: 1.3rem;
+
 }
 
-.missoes li {
-  margin: 0.5rem 0;
-  font-size: 1rem;
+.animacoes {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
 }
+
+/*ANIMAÇÃO MISSÕES*/
+
+.flip_container {
+  perspective: 1000px;
+  /* profundidade do 3D */
+  width: 17vh;
+  height: 17vh;
+  cursor: pointer;
+}
+
+.flip_card { /*toda largura e altura do container*/
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d; /*presenva a profundidade 3d*/
+  transition: transform 0.6s;
+}
+
+.flip_container.clicked .flip_card { /*quando eu clicar no container, o card vira*/
+  transform: rotateY(180deg); /*gira 180*/
+}
+
+.flip_face {
+  position: absolute; /*uma face sobre a outra*/
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* esconde o lado de trás */
+  overflow: hidden; /*corta conteudo alem das bordas*/
+}
+
+.card_front {
+  background: url(../images/estrela_missao.png) center/cover no-repeat; /*parte da frente do card*/
+  color: var(--preto);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card_back {  /*parte de tras do card*/
+  background: white;
+  color: var(--preto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transform: rotateY(180deg); /*rotaciona o verso junto*/
+  border-radius: 200px;
+}
+
+
+
 
 
 /*PROMOÇÕES*/
@@ -253,14 +311,15 @@ section {
   text-align: center;
   margin-bottom: 3rem;
   font-size: 1.5rem;
-  text-decoration:underline var(--fundo);
+  text-decoration: underline var(--fundo);
   text-underline-offset: 10px;
 }
 
 
 .promotions .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1rem,0.5fr));  /*como queremos organizar nossas colunas; repetir a qntd de vezes que forem necessarias sendo que vai ser automatico, e o tamanho minimo sera 30rem e o max 1fr (tela completa */
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 0.5fr));
+  /*como queremos organizar nossas colunas; repetir a qntd de vezes que forem necessarias sendo que vai ser automatico, e o tamanho minimo sera 30rem e o max 1fr (tela completa */
   gap: 1.5rem;
 }
 
@@ -269,7 +328,8 @@ section {
 }
 
 .promotions .box-container .box img {
-  height: 10rem;;
+  height: 10rem;
+  ;
 }
 
 .promotions .box-container .box h3 {
@@ -320,13 +380,14 @@ section {
   text-align: center;
   margin-bottom: 3rem;
   font-size: 1.5rem;
-  text-decoration:underline var(--fundo);
+  text-decoration: underline var(--fundo);
   text-underline-offset: 10px;
 }
 
 .bestSellers .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1rem,0.5fr));  /*como queremos organizar nossas colunas; repetir a qntd de vezes que forem necessarias sendo que vai ser automatico, e o tamanho minimo sera 30rem e o max 1fr (tela completa */
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 0.5fr));
+  /*como queremos organizar nossas colunas; repetir a qntd de vezes que forem necessarias sendo que vai ser automatico, e o tamanho minimo sera 30rem e o max 1fr (tela completa */
   gap: 1.5rem;
 }
 
@@ -335,7 +396,8 @@ section {
 }
 
 .bestSellers .box-container .box img {
-  height: 10rem;;
+  height: 10rem;
+  ;
 }
 
 .bestSellers .box-container .box h3 {
@@ -385,13 +447,14 @@ section {
   text-align: center;
   margin-bottom: 3rem;
   font-size: 1.5rem;
-  text-decoration:underline var(--fundo);
+  text-decoration: underline var(--fundo);
   text-underline-offset: 10px;
 }
 
 .packaged .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1rem,0.5fr));  /*como queremos organizar nossas colunas; repetir a qntd de vezes que forem necessarias sendo que vai ser automatico, e o tamanho minimo sera 30rem e o max 1fr (tela completa */
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 0.5fr));
+  /*como queremos organizar nossas colunas; repetir a qntd de vezes que forem necessarias sendo que vai ser automatico, e o tamanho minimo sera 30rem e o max 1fr (tela completa */
   gap: 1.5rem;
 }
 
@@ -400,7 +463,8 @@ section {
 }
 
 .packaged .box-container .box img {
-  height: 10rem;;
+  height: 10rem;
+  ;
 }
 
 .packaged .box-container .box h3 {
@@ -464,12 +528,13 @@ footer {
 }
 
 .footer-logo img {
-  width: 170px;  /* tamanho da logo */
+  width: 170px;
+  /* tamanho da logo */
   height: auto;
   margin-right: 15px;
 }
 
-    /* Redes sociais */
+/* Redes sociais */
 .footer-social {
   display: flex;
   gap: 20px;
@@ -482,10 +547,11 @@ footer {
 }
 
 .footer-social a:hover {
-  color: #fff; /* muda cor ao passar o mouse */
+  color: #fff;
+  /* muda cor ao passar o mouse */
 }
 
-    /* Copy centralizado */
+/* Copy centralizado */
 .footer-copy {
   margin-top: 20px;
   text-align: center;
@@ -493,7 +559,7 @@ footer {
   width: 100%;
 }
 
-    /* Responsivo */
+/* Responsivo */
 @media (max-width: 600px) {
   .footer-container {
     flex-direction: column;

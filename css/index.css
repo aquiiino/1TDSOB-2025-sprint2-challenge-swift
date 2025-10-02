@@ -16,7 +16,7 @@
   --fonte: rgb(160, 10, 10);
   --botao: #F0B323;
   --fundo: #bb0000;
-  --fundo2: #d32f2f;
+  --fundo2: #fa2727;
   --cinza: #483C32;
   --margem: 120px
 }
@@ -81,9 +81,37 @@ section {
   font-size: 1.9rem;
 }
 
+.icons .perfil {
+  position: relative;
+  display: inline-block;
+}
+
 .icons .perfil button {
   background: var(--branco);
 }
+
+.icons .perfil .menu {
+  position: absolute;
+  right:0;
+  background: var(--branco);
+  border: 2px solid var(--fundo);
+  border-radius: 6px;
+  list-style: none;
+  padding: 0.5rem;
+  min-width: 180px;
+}
+
+.icons .perfil .menu li{
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.icons .perfil .menu li:hover{
+  background: var(--fundo2);
+  color: var(--branco);
+  font-weight: bold;
+}
+
 
 
 .hero {

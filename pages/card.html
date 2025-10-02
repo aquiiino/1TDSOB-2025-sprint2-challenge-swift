@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minha Sacola</title>
+
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/card.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <section>
+      <a href="#" class="logo">
+        <img src="../images/logo-swift-interna.png" alt="logo navbar swift">
+      </a>
+
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#categories">Produtos</a>
+        <a href="#promotions">No Precinho</a>
+        <a href="#">Receitas</a>
+        <a href="#">Contato</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fa-solid fa-search"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-user"></i>
+      </div>
+    </section>
+  </header>
+
+  <main class="cart-container">
+    <h1>Minha Sacola</h1>
+
+    <section class="cart-items">
+      <div class="cart-item">
+        <img src="../images/produto-exemplo.jpg" alt="Produto">
+        <div class="item-info">
+          <h2>Picanha Swift</h2>
+          <p>1kg</p>
+          <span class="price">R$ 89,90</span>
+        </div>
+        <div class="item-actions">
+          <input type="number" value="1" min="1">
+          <button class="remove-btn"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <img src="../images/produto-exemplo.jpg" alt="Produto">
+        <div class="item-info">
+          <h2>Frango Swift</h2>
+          <p>2kg</p>
+          <span class="price">R$ 29,90</span>
+        </div>
+        <div class="item-actions">
+          <input type="number" value="2" min="1">
+          <button class="remove-btn"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </div>
+    </section>
+
+
+    <aside class="cart-summary">
+      <h2>Resumo</h2>
+      <div class="summary-line">
+        <span>Subtotal:</span>
+        <span>R$ 149,70</span>
+      </div>
+      <div class="summary-line">
+        <span>Frete:</span>
+        <span>R$ 10,00</span>
+      </div>
+      <div class="summary-line total">
+        <span>Total:</span>
+        <span>R$ 159,70</span>
+      </div>
+      <button class="checkout-btn">Finalizar Compra</button>
+    </aside>
+  </main>
+
+<footer>
+  <div class="footer-container">
+      <!-- Logo -->
+    <div class="footer-logo">
+      <img src="../images/IconeSwift.png" alt="footer logo">
+    </div>
+
+      <!-- Redes sociais -->
+  <div class="footer-social">
+    <a href="https://www.facebook.com/lojaswift" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/lojaswift" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/channel/UCx_DnTAyLKfvLj5r788zXng" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+
+      <!-- Copy centralizado -->
+    <div class="footer-copy">
+    &copy; 2025 - Swift Club. Todos os direitos reservados.
+    </div>
+  </div>
+  </footer>
+
+<script src="../js/card.js"></script>
+
+</body>
+</html>
+
+
+
+

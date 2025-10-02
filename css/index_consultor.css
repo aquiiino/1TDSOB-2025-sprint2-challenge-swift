@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+:root {
+  --vermelho: #d60000;
+  --branco: rgb(255, 255, 255);
+  --preto: rgb(0, 0, 0);
+  --fonte: rgb(160, 10, 10);
+  --botao: #F0B323;
+  --fundo: #bb0000;
+  --fundo2: #fa2727;
+  --cinza: #483C32;
+  --margem: 120px
+}

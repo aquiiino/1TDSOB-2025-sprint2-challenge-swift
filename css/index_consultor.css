@@ -306,7 +306,7 @@ section {
 }
 
 .rankings .ranking_esquerda {
-  flex:1;
+  flex: 1;
   background: white;
   padding: 1rem;
   border-radius: 20px;
@@ -314,7 +314,7 @@ section {
   border: 2px solid var(--fundo);
 }
 
-.rankings .ranking_esquerda h2{
+.rankings .ranking_esquerda h2 {
   color: var(--fundo);
 }
 
@@ -334,18 +334,19 @@ section {
   align-items: center;
 }
 
-.rankings .ranking_esquerda .ranking_cards a{
+.rankings .ranking_esquerda .ranking_cards a {
   text-decoration: none;
   color: var(--preto);
 }
 
-.rankings .ranking_esquerda .ranking_cards a:hover{
+.rankings .ranking_esquerda .ranking_cards a:hover {
   text-decoration: underline;
   color: var(--fundo);
+  font-weight: bold;
 }
 
 .rankings .ranking_direita {
-  flex:1;
+  flex: 1;
   background: white;
   padding: 1rem;
   border-radius: 20px;
@@ -353,7 +354,7 @@ section {
   border: 2px solid var(--fundo);
 }
 
-.rankings .ranking_direita h2{
+.rankings .ranking_direita h2 {
   color: var(--fundo);
 }
 
@@ -373,55 +374,115 @@ section {
   align-items: center;
 }
 
-.rankings .ranking_direita .ranking_cards a{
+.rankings .ranking_direita .ranking_cards a {
   text-decoration: none;
   color: var(--preto);
 }
 
-.rankings .ranking_direita .ranking_cards a:hover{
+.rankings .ranking_direita .ranking_cards a:hover {
   text-decoration: underline;
   color: var(--fundo);
+  font-weight: bold;
 }
 
-  /* Chat */
-  .chat .chat-box {
-    background: #fff;
-    border-radius: 10px;
-    padding: 1rem;
-    height: 250px;
-    overflow-y: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
 
-  .msg {
-    margin: 0.5rem 0;
-    padding: 0.8rem;
-    border-radius: 8px;
-    max-width: 70%;
-  }
+.clientes {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
 
-  .msg.cliente {
-    background: #e0e0e0;
-    text-align: left;
-  }
+.clientes .chat {
+  flex: 1;
+  border: 2px solid var(--fundo);
+  border-radius: 20px;
+  padding: 1rem;
+}
 
-  .msg.consultor {
-    background: #d60000;
-    color: white;
-    margin-left: auto;
-    text-align: right;
-  }
+.clientes .chat h2{
+  margin-bottom: 10px;
+  color: var(--fundo);
+  text-align: center;
+}
 
-  /* Pedidos */
-  .pedidos ul {
-    list-style: none;
-    padding: 0;
-  }
+.clientes .chat .chat_box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  height: 250px;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.425);
+}
 
-  .pedidos li {
-    background: white;
-    margin: 0.5rem 0;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
+.clientes .chat .chat_box .mensagem {
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-radius: 8px;
+  max-width: 70%;
+}
+
+.clientes .chat .chat_box .mensagem.cliente {
+  background: #e0e0e0;
+  text-align: left;
+}
+
+.clientes .chat .chat_box .mensagem.consultor {
+  background: #d60000;
+  color: white;
+  margin-left: auto;
+  text-align: right;
+}
+
+.clientes .chat .chat_box a{
+  color: var(--preto);
+  text-decoration: none;
+  text-align: right;
+  display: block;
+  margin-top: 1rem;
+}
+
+.clientes .chat .chat_box a:hover{
+  color: var(--fundo);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.clientes .pedidos {
+  flex: 1;
+  border: 2px solid var(--fundo);
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.clientes .pedidos h2{
+  color: var(--fundo);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.clientes .pedidos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pedidos li {
+  background: white;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.322);
+}
+
+.clientes .pedidos a{
+  color: var(--preto);
+  text-decoration: none;
+  text-align: right;
+  display: block;
+  margin-top: 3rem;
+}
+
+.clientes .pedidos a:hover{
+  color: var(--fundo);
+  font-weight: bold;
+  text-decoration: underline;
+}

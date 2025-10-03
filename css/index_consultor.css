@@ -91,7 +91,7 @@ section {
 
 .icons .perfil .menu {
   position: absolute;
-  right:0;
+  right: 0;
   background: var(--branco);
   border: 2px solid var(--fundo);
   border-radius: 6px;
@@ -100,12 +100,12 @@ section {
   min-width: 180px;
 }
 
-.icons .perfil .menu li{
+.icons .perfil .menu li {
   cursor: pointer;
   padding: 0.5rem;
 }
 
-.icons .perfil .menu li:hover{
+.icons .perfil .menu li:hover {
   background: var(--fundo2);
   color: var(--branco);
   font-weight: bold;
@@ -227,35 +227,44 @@ section {
 /*ANIMAÇÃO MISSÕES*/
 
 .flip_container {
-  perspective: 1000px;   /* profundidade do 3D */
+  perspective: 1000px;
+  /* profundidade do 3D */
   min-width: 22vh;
   min-height: 22vh;
   cursor: pointer;
 }
 
-.flip_card { /*toda largura e altura do container*/
+.flip_card {
+  /*toda largura e altura do container*/
   width: 100%;
   height: 100%;
   position: relative;
-  transform-style: preserve-3d; /*presenva a profundidade 3d*/
+  transform-style: preserve-3d;
+  /*presenva a profundidade 3d*/
   transition: transform 0.6s;
   z-index: 1;
 }
 
-.flip_container.clicked .flip_card { /*quando eu clicar no container, o card vira*/
-  transform: rotateY(180deg); /*gira 180*/
+.flip_container.clicked .flip_card {
+  /*quando eu clicar no container, o card vira*/
+  transform: rotateY(180deg);
+  /*gira 180*/
 }
 
 .flip_face {
-  position: absolute; /*uma face sobre a outra*/
+  position: absolute;
+  /*uma face sobre a outra*/
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* esconde o lado de trás */
-  overflow: hidden; /*corta conteudo alem das bordas*/
+  backface-visibility: hidden;
+  /* esconde o lado de trás */
+  overflow: hidden;
+  /*corta conteudo alem das bordas*/
 }
 
 .card_front {
-  background: url(../images/estrela_missao_vinho.jpg) center/cover no-repeat; /*parte da frente do card*/
+  background: url(../images/estrela_missao_vinho.jpg) center/cover no-repeat;
+  /*parte da frente do card*/
   color: var(--preto);
   text-align: center;
   justify-content: center;
@@ -265,14 +274,154 @@ section {
   font-weight: bold;
 }
 
-.card_back {  /*parte de tras do card*/
+.card_back {
+  /*parte de tras do card*/
   background: white;
   color: var(--preto);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-  transform: rotateY(180deg); /*rotaciona o verso junto*/
+  transform: rotateY(180deg);
+  /*rotaciona o verso junto*/
   border-radius: 200px;
   border: 2px solid var(--fundo);
 }
+
+.consultor-dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Ranking */
+
+.rankings {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.rankings .ranking_esquerda {
+  flex:1;
+  background: white;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid var(--fundo);
+}
+
+.rankings .ranking_esquerda h2{
+  color: var(--fundo);
+}
+
+.rankings .ranking_esquerda .ranking_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.rankings .ranking_esquerda .ranking_cards .pessoa {
+  display: flex;
+  font-weight: lighter;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.171);
+  border-radius: 10px;
+  justify-content: left;
+  align-items: center;
+}
+
+.rankings .ranking_esquerda .ranking_cards a{
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.rankings .ranking_esquerda .ranking_cards a:hover{
+  text-decoration: underline;
+  color: var(--fundo);
+}
+
+.rankings .ranking_direita {
+  flex:1;
+  background: white;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid var(--fundo);
+}
+
+.rankings .ranking_direita h2{
+  color: var(--fundo);
+}
+
+.rankings .ranking_direita .ranking_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.rankings .ranking_direita .ranking_cards .pessoa {
+  display: flex;
+  font-weight: lighter;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.171);
+  border-radius: 10px;
+  justify-content: left;
+  align-items: center;
+}
+
+.rankings .ranking_direita .ranking_cards a{
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.rankings .ranking_direita .ranking_cards a:hover{
+  text-decoration: underline;
+  color: var(--fundo);
+}
+
+  /* Chat */
+  .chat .chat-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    height: 250px;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .msg {
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+    max-width: 70%;
+  }
+
+  .msg.cliente {
+    background: #e0e0e0;
+    text-align: left;
+  }
+
+  .msg.consultor {
+    background: #d60000;
+    color: white;
+    margin-left: auto;
+    text-align: right;
+  }
+
+  /* Pedidos */
+  .pedidos ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .pedidos li {
+    background: white;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }

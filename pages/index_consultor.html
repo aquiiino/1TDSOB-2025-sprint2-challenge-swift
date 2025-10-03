@@ -10,155 +10,230 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<header class="header">
+<body>
 
-    <section>
-        <a href="#" class="logo">
-            <img src="../images/logo-swift-interna.png" alt="logo navbar swift">
-        </a>
+    <header class="header">
 
-        <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#swift_club">Swift Club</a>
-            <a href="#footer">Nossas redes</a>
-        </nav>
+        <section>
+            <a href="#" class="logo">
+                <img src="../images/logo-swift-interna.png" alt="logo navbar swift">
+            </a>
 
-        <div class="icons">
-            <i class="fa-solid fa-search"></i>
-            <i class="fa-regular fa-comments"></i>
-            <div class="perfil">
-                <button onclick="menu.hidden^=1"><i class="fa-solid fa-user"></i></button>
-                <ul class="menu" id="menu" hidden>
-                    <li>Perfil</li>
-                    <li>Carteira de clientes</li>
-                    <li>Chats</li>
-                    <li>Ranking</li>
-                    <li>Meu Swift Club</li>
-                    <li>Cadastrar novo cliente</li>
-                    <li>Configurações</li>
-                    <li>Sair</li>
-                </ul>
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#swift_club">Swift Club</a>
+                <a href="#footer">Nossas redes</a>
+            </nav>
+
+            <div class="icons">
+                <i class="fa-solid fa-search"></i>
+                <i class="fa-regular fa-comments"></i>
+                <div class="perfil">
+                    <button onclick="menu.hidden^=1"><i class="fa-solid fa-user"></i></button>
+                    <ul class="menu" id="menu" hidden>
+                        <li>Perfil</li>
+                        <li>Carteira de clientes</li>
+                        <li>Chats</li>
+                        <li>Ranking</li>
+                        <li>Meu Swift Club</li>
+                        <li>Cadastrar novo cliente</li>
+                        <li>Configurações</li>
+                        <li>Sair</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="hero">
+        <div class="boas-vindas">
+            <!-- mudar no js -->
+            <h1 id="mensagemCliente"></h1>
+        </div>
+        <div class="compre">
+            <h2>ACELERANDO NEGÓCIOS,</h2>
+            <h3>SIMPLIFICANDO CAMINHOS</h3>
+            <p>SWIFT: PORQUE O AMANHÃ NÃO ESPERA</p>
+        </div>
+        </div>
+    </section>
+
+    <section class="recompensas">
+        <h2>Meus Pontos & Recompensas</h2>
+
+        <!-- Pontos atuais -->
+        <div class="pontos" id="swift_club">
+            <h3>Seus Pontos</h3>
+            <div class="pontos-qntd">
+                <p>750</p>
+                <img src="../images/estrela_platina.png" alt="Estrela Platina">
+            </div>
+        </div>
+
+        <!-- Recompensas -->
+        <div class="recompensas-lista">
+            <div class="premio">
+                <img width="60" height="60" src="https://img.icons8.com/dotty/80/money.png" alt="Dinheiro" />
+                <h4>VOUCHER DE R$200</h4>
+                <p>Troque por 650 pontos</p>
+            </div>
+
+            <div class="premio">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/loyalty-card.png" alt="Cupom" />
+                <h4>R$100,00 OFF COM NOSSOS PARCEIROS</h4>
+                <p>Troque por 550 pontos</p>
+            </div>
+
+            <div class="premio">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/loyalty-card.png" alt="Cupom" />
+                <h4>CUPOM CHURRASCO SWIFT R$50,00</h4>
+                <p>Troque por 420 pontos</p>
+            </div>
+
+            <div class="premio">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/chef-hat.png" alt="Chapéu de chef" />
+                <h4>AULA GASTRONÔMICA (sujeito à dusponibilidade)</h4>
+                <p>Troque por 620 pontos</p>
+            </div>
+        </div>
+
+        <!-- Missões -->
+        <div class="missoes">
+            <h3>Missões Disponíveis</h3>
+            <h5>Clique na estrela para ver mais</h5>
+            <div class="animacoes">
+                <!-- quando recebe o click, faz a ação -->
+
+                <div class="flip_container" onclick="this.classList.toggle('clicked')">
+                    <div class="flip_card">
+                        <div class="flip_face card_front">15 <br>pontos</div>
+                        <div class="flip_face card_back">Venda um produto novo da loja</div>
+                    </div>
+                </div>
+
+                <div class="flip_container" onclick="this.classList.toggle('clicked')">
+                    <div class="flip_card">
+                        <div class="flip_face card_front">10 pontos</div>
+                        <div class="flip_face card_back">Avaliação 3 estrelas do cliente</div>
+                    </div>
+                </div>
+
+                <div class="flip_container" onclick="this.classList.toggle('clicked')">
+                    <div class="flip_card">
+                        <div class="flip_face card_front">15 pontos</div>
+                        <div class="flip_face card_back">Avaliação 4 estrelas do cliente</div>
+                    </div>
+                </div>
+
+                <div class="flip_container" onclick="this.classList.toggle('clicked')">
+                    <div class="flip_card">
+                        <div class="flip_face card_front">20 pontos</div>
+                        <div class="flip_face card_back">Avaliação 5 estrelas do cliente</div>
+                    </div>
+                </div>
+
+                <div class="flip_container" onclick="this.classList.toggle('clicked')">
+                    <div class="flip_card">
+                        <div class="flip_face card_front">20 pontos</div>
+                        <div class="flip_face card_back">Crie um combo personalizado para seu cliente</div>
+                    </div>
+                </div>
+
+                <div class="flip_container" onclick="this.classList.toggle('clicked')">
+                    <div class="flip_card">
+                        <div class="flip_face card_front">50 pontos</div>
+                        <div class="flip_face card_back">Alcance meta mensal</div>
+                    </div>
+                </div>
+
+                <div class="flip_container" onclick="this.classList.toggle('clicked')">
+                    <div class="flip_card">
+                        <div class="flip_face card_front">100 pontos</div>
+                        <div class="flip_face card_back">Feliz Páscoa! (venda um bacalhau)</div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-</header>
 
-<section class="hero">
-    <div class="boas-vindas">
-        <!-- mudar no js -->
-        <h1 id="mensagemCliente"></h1>
-    </div>
-    <div class="compre">
-        <h2>ACELERANDO NEGÓCIOS,</h2>
-        <h3>SIMPLIFICANDO CAMINHOS</h3>
-        <p>SWIFT: PORQUE O AMANHÃ NÃO ESPERA</p>
-    </div>
-    </div>
-</section>
+    <section class="rankings">
 
-<section class="recompensas">
-    <h2>Meus Pontos & Recompensas</h2>
+        <div class="ranking_esquerda">
+            <h2>Ranking Brasil</h2>
 
-    <!-- Pontos atuais -->
-    <div class="pontos" id="swift_club">
-        <h3>Seus Pontos</h3>
-        <div class="pontos-qntd">
-            <p>750</p>
-            <img src="../images/estrela_platina.png" alt="Estrela Platina">
+            <div class="ranking_cards">
+                <div class="pessoa">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/medal2--v1.png"
+                        alt="Medalha primeiro lugar" />
+                    <h3>João Pedro da Silva - Rio de Janeiro</h3>
+                </div>
+
+                <div class="pessoa">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/medal-second-place--v1.png"
+                        alt="Medalha segundo lugar" />
+                    <h3>Mariana Pereira Souza - Distrito federal</h3>
+                </div>
+
+                <div class="pessoa">
+                    <img width="40" height="40" src="https://img.icons8.com/office/40/medal2-third-place.png"
+                        alt="Medalha terceiro lugar" />
+                    <h3>Joice Almeida - São Paulo</h3>
+                </div>
+                <a href="#">Ver mais</a>
+            </div>
+        </div>
+
+        <div class="ranking_direita">
+            <h2>Ranking do Estado</h2>
+
+            <div class="ranking_cards">
+                <div class="pessoa">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/medal2--v1.png"
+                        alt="Medalha primeiro lugar" />
+                    <h3>Amanda Batista da Costa</h3>
+                </div>
+
+                <div class="pessoa">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/medal-second-place--v1.png"
+                        alt="Medalha segundo lugar" />
+                    <h3>Fernanda Amaral</h3>
+                </div>
+
+                <div class="pessoa">
+                    <img width="40" height="40" src="https://img.icons8.com/office/40/medal2-third-place.png"
+                        alt="Medalha terceiro lugar" />
+                    <h3>Cláudio Nunez Silva</h3>
+                </div>
+                <a href="#">Ver mais</a>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Chat -->
+    <div class="chat">
+        <h2>Chat com Clientes</h2>
+        <div class="chat-box">
+            <div class="msg cliente">Olá, gostaria de saber sobre a entrega.</div>
+            <div class="msg consultor">Claro, vou verificar para você!</div>
+            <div class="msg cliente">Obrigado :)</div>
         </div>
     </div>
 
-    <!-- Recompensas -->
-    <div class="recompensas-lista">
-        <div class="premio">
-            <img width="60" height="60" src="https://img.icons8.com/dotty/80/money.png" alt="Dinheiro"/>
-            <h4>VOUCHER DE R$200</h4>
-            <p>Troque por 650 pontos</p>
-        </div>
-
-        <div class="premio">
-            <img width="50" height="50" src="https://img.icons8.com/ios/50/loyalty-card.png" alt="Cupom" />
-            <h4>R$100,00 OFF COM NOSSOS PARCEIROS</h4>
-            <p>Troque por 550 pontos</p>
-        </div>
-
-        <div class="premio">
-            <img width="50" height="50" src="https://img.icons8.com/ios/50/loyalty-card.png" alt="Cupom" />
-            <h4>CUPOM CHURRASCO SWIFT R$50,00</h4>
-            <p>Troque por 420 pontos</p>
-        </div>
-
-        <div class="premio">
-           <img width="50" height="50" src="https://img.icons8.com/ios/50/chef-hat.png" alt="Chapéu de chef"/>
-            <h4>AULA GASTRONÔMICA (sujeito à dusponibilidade)</h4>
-            <p>Troque por 620 pontos</p>
-        </div>
+    <!-- Últimos Pedidos -->
+    <div class="pedidos">
+        <h2>Últimos Pedidos</h2>
+        <ul>
+            <li>Pedido #234 - Status: Enviado</li>
+            <li>Pedido #233 - Status: Processando</li>
+            <li>Pedido #232 - Status: Entregue</li>
+        </ul>
     </div>
 
-    <!-- Missões -->
-    <div class="missoes">
-        <h3>Missões Disponíveis</h3>
-        <h5>Clique na estrela para ver mais</h5>
-        <div class="animacoes">
-            <!-- quando recebe o click, faz a ação -->
-
-            <div class="flip_container" onclick="this.classList.toggle('clicked')">
-                <div class="flip_card">
-                    <div class="flip_face card_front">15 <br>pontos</div>
-                    <div class="flip_face card_back">Venda um produto novo da loja</div>
-                </div>
-            </div>
-
-            <div class="flip_container" onclick="this.classList.toggle('clicked')">
-                <div class="flip_card">
-                    <div class="flip_face card_front">10 pontos</div>
-                    <div class="flip_face card_back">Avaliação 3 estrelas do cliente</div>
-                </div>
-            </div>
-
-             <div class="flip_container" onclick="this.classList.toggle('clicked')">
-                <div class="flip_card">
-                    <div class="flip_face card_front">15 pontos</div>
-                    <div class="flip_face card_back">Avaliação 4 estrelas do cliente</div>
-                </div>
-            </div>
-
-             <div class="flip_container" onclick="this.classList.toggle('clicked')">
-                <div class="flip_card">
-                    <div class="flip_face card_front">20 pontos</div>
-                    <div class="flip_face card_back">Avaliação 5 estrelas do cliente</div>
-                </div>
-            </div>
-
-            <div class="flip_container" onclick="this.classList.toggle('clicked')">
-                <div class="flip_card">
-                    <div class="flip_face card_front">20 pontos</div>
-                    <div class="flip_face card_back">Crie um combo personalizado para seu cliente</div>
-                </div>
-            </div>
-
-            <div class="flip_container" onclick="this.classList.toggle('clicked')">
-                <div class="flip_card">
-                    <div class="flip_face card_front">50 pontos</div>
-                    <div class="flip_face card_back">Alcance meta mensal</div>
-                </div>
-            </div>
-
-            <div class="flip_container" onclick="this.classList.toggle('clicked')">
-                <div class="flip_card">
-                    <div class="flip_face card_front">100 pontos</div>
-                    <div class="flip_face card_back">Feliz Páscoa! (venda um bacalhau)</div>
-                </div>
-            </div>
 
 
-        </div>
-    </div>
-    </div>
-</section>
-
-<body>
-
+    </section>
 
 </body>
 

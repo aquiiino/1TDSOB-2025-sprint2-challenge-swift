@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (existingItem) {
         existingItem.quantity += 1;
       } else {
-        cart.push({ name, price, points, image, quantity: 1 }); // 👈 SALVANDO OS PONTOS
+        cart.push({ name, price, points, image, quantity: 1 }); 
       }
 
       localStorage.setItem("cart", JSON.stringify(cart));

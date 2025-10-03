@@ -163,7 +163,6 @@ footer {
   margin-right: 15px;
 }
 
-    /* Redes sociais */
 .footer-social {
   display: flex;
   gap: 20px;
@@ -176,10 +175,9 @@ footer {
 }
 
 .footer-social a:hover {
-  color: #fff; /* muda cor ao passar o mouse */
+  color: #fff; 
 }
 
-    /* Copy centralizado */
 .footer-copy {
   margin-top: 20px;
   text-align: center;
@@ -187,7 +185,6 @@ footer {
   width: 100%;
 }
 
-    /* Responsivo */
 @media (max-width: 600px) {
   .footer-container {
     flex-direction: column;
@@ -196,4 +193,19 @@ footer {
 }
 
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que a altura total ocupe a tela inteira */
+}
+
+.content {
+  flex: 1; /* Faz o conteúdo expandir e empurra o footer para o final */
+}
 

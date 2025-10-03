@@ -16,7 +16,7 @@ Este projeto contém todos os códigos e materiais desenvolvidos pelos integrant
 - Elzo Íthallo
 - Matheus Leodegario
 - Isadora Maciel
--
+- Sidney Pietrafesa
 
 ## Status
 Em desenvolvimento

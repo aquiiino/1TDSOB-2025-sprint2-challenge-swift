@@ -21,7 +21,7 @@ Este projeto contém todos os códigos e materiais desenvolvidos pelos integrant
 ## Status
 Em desenvolvimento
 
-## Como rodar
+## Link do Clone
 Clone o repositório:
 
 [GitLab Project]() https://gitlab.com/aquiiino-group/aquiiino-project

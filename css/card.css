@@ -7,7 +7,7 @@ body {
 
 main.cart-container {
   max-width: 1200px;
-  margin: 120px auto 50px; /* espaço por causa da navbar */
+  margin: 120px auto 50px;
   padding: 20px;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -18,7 +18,7 @@ main.cart-container {
   grid-column: span 2;
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #e30613; /* Vermelho Swift */
+  color: #e30613;
 }
 
 .cart-items {
@@ -29,7 +29,7 @@ main.cart-container {
 
 .cart-item {
   display: flex;
-  align-items: left;
+  align-items: flex-start;
   background: #fff;
   padding: 15px;
   border-radius: 12px;
@@ -40,13 +40,12 @@ main.cart-container {
 }
 
 .cart-item img {
-  width: 100px;   
+  width: 100px;
   height: auto;
   border-radius: 8px;
   margin-right: 20px;
   flex-shrink: 0; 
 }
-
 
 .item-info {
   flex: 1;
@@ -68,6 +67,12 @@ main.cart-container {
   margin-top: 8px;
   font-weight: bold;
   color: #e30613;
+}
+
+.item-info .points {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
 }
 
 .item-actions {
@@ -92,7 +97,6 @@ main.cart-container {
   cursor: pointer;
 }
 
-/* Resumo */
 .cart-summary {
   background: #fff;
   padding: 20px;
@@ -109,14 +113,27 @@ main.cart-container {
 }
 
 .summary-line {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 5px 0;
+  font-size: 1rem;
+  align-items: flex-start;
+  gap: 15px; 
 }
 
 .summary-line.total {
   font-weight: bold;
   font-size: 1.1rem;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.subtotal-value,
+.total-value {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
 }
 
 .checkout-btn {
@@ -158,7 +175,7 @@ footer {
 }
 
 .footer-logo img {
-  width: 170px;  /* tamanho da logo */
+  width: 170px;  
   height: auto;
   margin-right: 15px;
 }
@@ -192,7 +209,6 @@ footer {
   }
 }
 
-
 html, body {
   height: 100%;
   margin: 0;
@@ -209,3 +225,56 @@ html, body {
   flex: 1; 
 }
 
+.points-checkbox {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 500;
+}
+
+.points-checkbox input {
+  display: none;
+}
+
+.points-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.points-checkbox input:checked + .checkmark {
+  background-color: #4CAF50;
+}
+
+.points-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.points-checkbox input:checked + .checkmark::after {
+  display: block;
+}
+
+.points-checkbox .checkmark::after {
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+.summary-line > span:last-child,
+.summary-line > .subtotal-value,
+.summary-line > .total-value {
+  text-align: right;       
+  white-space: nowrap;     
+}

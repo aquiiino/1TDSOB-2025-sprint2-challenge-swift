@@ -399,7 +399,7 @@ section {
   padding: 1rem;
 }
 
-.clientes .chat h2{
+.clientes .chat h2 {
   margin-bottom: 10px;
   color: var(--fundo);
   text-align: center;
@@ -433,7 +433,7 @@ section {
   text-align: right;
 }
 
-.clientes .chat .chat_box a{
+.clientes .chat .chat_box a {
   color: var(--preto);
   text-decoration: none;
   text-align: right;
@@ -441,7 +441,7 @@ section {
   margin-top: 1rem;
 }
 
-.clientes .chat .chat_box a:hover{
+.clientes .chat .chat_box a:hover {
   color: var(--fundo);
   font-weight: bold;
   text-decoration: underline;
@@ -454,7 +454,7 @@ section {
   padding: 1rem;
 }
 
-.clientes .pedidos h2{
+.clientes .pedidos h2 {
   color: var(--fundo);
   text-align: center;
   margin-bottom: 10px;
@@ -473,7 +473,7 @@ section {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.322);
 }
 
-.clientes .pedidos a{
+.clientes .pedidos a {
   color: var(--preto);
   text-decoration: none;
   text-align: right;
@@ -481,8 +481,71 @@ section {
   margin-top: 3rem;
 }
 
-.clientes .pedidos a:hover{
+.clientes .pedidos a:hover {
   color: var(--fundo);
   font-weight: bold;
   text-decoration: underline;
+}
+
+footer {
+  background-color: #b91010;
+  color: #fff;
+  padding: 20px 40px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  color: var(--branco);
+  flex-direction: column;
+}
+
+.footer-logo img {
+  width: 170px;
+  /* tamanho da logo */
+  height: auto;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+/* Redes sociais */
+.footer-social {
+  display: flex;
+  gap: 20px;
+  font-size: 22px;
+}
+
+.footer-social a {
+  color: #d4d4d4;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #fff;
+  /* muda cor ao passar o mouse */
+}
+
+/* Copy centralizado */
+.footer-copy {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
 }

@@ -202,10 +202,10 @@ html, body {
 .page-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Garante que a altura total ocupe a tela inteira */
+  min-height: 100vh; 
 }
 
 .content {
-  flex: 1; /* Faz o conteúdo expandir e empurra o footer para o final */
+  flex: 1; 
 }
 

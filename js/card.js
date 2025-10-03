@@ -9,9 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
     cartItemsContainer.innerHTML = "";
 
     let subtotal = 0;
+    let subtotalPoints = 0; 
 
     cart.forEach((item, index) => {
       subtotal += item.price * item.quantity;
+      subtotalPoints += item.points * item.quantity; 
 
       const div = document.createElement("div");
       div.classList.add("cart-item");
@@ -20,7 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="item-info">
           <h2>${item.name}</h2>
           <p>${item.quantity}x</p>
-          <span class="price">R$ ${(item.price * item.quantity).toFixed(2)}</span>
+          <span class="price">R$ ${(item.price * item.quantity).toFixed(2)} 
+            ou ${item.points * item.quantity} pontos</span> <!-- 👈 mostrando os dois -->
         </div>
         <div class="item-actions">
           <input type="number" value="${item.quantity}" min="1" data-index="${index}">
@@ -30,9 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
       cartItemsContainer.appendChild(div);
     });
 
-    summarySubtotal.textContent = `R$ ${subtotal.toFixed(2)}`;
+    summarySubtotal.textContent = `R$ ${subtotal.toFixed(2)} ou ${subtotalPoints} pontos`; // 👈 subtotal
+
     const frete = 10.0;
-    summaryTotal.textContent = `R$ ${(subtotal + frete).toFixed(2)}`;
+    summaryTotal.textContent = `R$ ${(subtotal + frete).toFixed(2)} ou ${subtotalPoints} pontos`; // 👈 total
 
     localStorage.setItem("cart", JSON.stringify(cart));
   }
@@ -55,3 +59,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderCart();
 });
+

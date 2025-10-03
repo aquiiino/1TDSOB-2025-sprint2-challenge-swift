@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const btn = e.target.closest(".add-to-cart");
       const name = btn.getAttribute("data-name");
       const price = parseFloat(btn.getAttribute("data-price"));
+      const points = parseInt(btn.getAttribute("data-points")); // 👈 PEGANDO OS PONTOS
       const image = btn.getAttribute("data-image");
 
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -27,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (existingItem) {
         existingItem.quantity += 1;
       } else {
-        cart.push({ name, price, image, quantity: 1 });
+        cart.push({ name, price, points, image, quantity: 1 }); // 👈 SALVANDO OS PONTOS
       }
 
       localStorage.setItem("cart", JSON.stringify(cart));
@@ -35,4 +36,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
 

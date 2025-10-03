@@ -3,3 +3,23 @@ document.getElementById("formLoginConsultor").addEventListener("submit", functio
     event.preventDefault(); 
     window.location.href = "index_consultor.html"; 
 });
+
+//pega o nome do consultor e guarda
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('formLoginConsultor');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const nome = document.getElementById('nomeConsultor').value;
+        const senha = form.senhaConsultor.value;
+
+        // simulação simples do login
+        if (nome && senha) {
+            localStorage.setItem('consultorLogado', nome); // salva o nome
+            window.location.href = '../pages/index_consultor.html';       // redireciona
+        } else {
+            alert('Preencha todos os campos!');
+        }
+    });
+});
